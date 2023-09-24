@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.AddRecord">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#004471"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#004471"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                    >
+
+                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cornerwht"
+                android:paddingTop="20dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DISCIPLINARY CASES"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Cheating/dishonesty"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2. Stealing"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3. Assaulting a teacher, or any other school authority or his agents, or other learner/s"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4. Smoking inside the school premises and bringing tobacco products, vapes, etc."
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5. Vandalism – writing on or destroying school property like chairs, tables, windows, books, laboratory equipment and others"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="6. Gambling of any sort"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7. Drinking intoxicants and liquor or entering the school premises under the influence of liquor, or bringing of alcoholic beverages"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8. Carrying and concealing deadly weapons or instruments"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="9. Extortion or asking money or in kind from others"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10. Fighting, causing injury to others"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="11. Hazing in any form or manner whether inside or outside the school premises"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="12. Sexual abuse, immorality, illicit relationships"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="13. Instigating, leading or participating in concerned activities leading to stoppage of classes"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="14. Preventing, threatening learners or faculty members or school authorities from discharging their duties or from attending classes or entering school premises"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15. Forging or tampering with school records or transfer forms"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="16. Patronizing suspected prostitution den, gambling and pornographic places"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case17"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="17. Bringing, using and selling of pornographic materials"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="18. Selling stolen goods in school"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="19. Absenteeism, cutting of classes, and tardiness"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20. Uttering (plastic cups, bottles, candy wrappers or any waste) inside the school campus specially inside the classroom and corridors"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="21. Loitering and staying inside or outside the school campus during class hour"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="22. Bringing in and using gadgets like cellular phones, i-pad, psp, etc. inside the school campus (R.M. No. 207 s 2018)"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="23. Unruly behavior inside the classroom or school premises, during assemblies, school activities, etc."
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="24. Uttering profanities/swearwords inside the school campus"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25. Going to restricted places"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="26. Tampering of school ID such as placing stickers and other objects on school ID,"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="27. Not giving letter to parents"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="28. Drug dependency or drug use, possession, and sale of prohibited drugs such as marijuana, ecstasy, shabu, etc. (it shall be subject to the Guidelines prescribed by DO 40 s. 2012 entitled Guidelines for the Conduct of Random Drug Testing in Public and Private Secondary Schools, and RA 9165 and its IRR)"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="29. Joining fraternities, sororities, and gangs;"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30. Bullying acts – physical, emotional, mental and cyber-bullying (Bullying cases or offenses shall be handled in accordance with Republic Act 10627 and DepEd Order No. 55, s. 2013)"
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="6dp"/>
+
+                        <CheckBox
+                            android:id="@+id/Case31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="31. Other analogous acts that may endanger/threaten any learner, school personnel, or the school."
+                            android:textColor="#858585"
+                            android:buttonTint="#858585"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="20dp"/>
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/corners"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

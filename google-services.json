@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "605437829930",
+    "firebase_url": "https://portal-management-app-default-rtdb.firebaseio.com",
+    "project_id": "portal-management-app",
+    "storage_bucket": "portal-management-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605437829930:android:3bd0618829961784a77453",
+        "android_client_info": {
+          "package_name": "com.example.portalmanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605437829930-66h6o1930ojjpavm6erui6g7nb6s6ihc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALl0a4HSZt_NiJ1tY3Zw94xLZIyF1scHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605437829930-66h6o1930ojjpavm6erui6g7nb6s6ihc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

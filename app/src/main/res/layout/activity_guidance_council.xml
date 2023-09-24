@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.GuidanceCouncilActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/drawer_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#004471"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                >
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornerbl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guidance and Council"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.SearchView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search..."
+                android:inputType="text"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textColor="#858585"
+                android:textColorHint="#858585"
+                android:layout_marginRight="20dp"
+                app:queryHint="Enter Name or LRN"
+                android:background="@drawable/text_border"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/studentlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

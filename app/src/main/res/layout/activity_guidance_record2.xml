@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.GuidanceRecord2">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/prof_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#004471"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#004471"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                    >
+
+                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            app:cardCornerRadius="250dp"
+                            app:cardBackgroundColor="@color/white"
+                            android:layout_gravity="left"
+                            >
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                app:cardCornerRadius="250dp"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/Prof"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/cornersw"
+                                    android:scaleType="centerCrop"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/Name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="[Student_Name]"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/UserEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="[Student_Email]"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"/>
+
+                            <TextView
+                                android:id="@+id/UserStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="[Student_Role]"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cornerwht"
+                android:paddingTop="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Quarter List"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp">
+
+                            <Button
+                                android:id="@+id/first"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="First"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/corners"
+                                android:padding="10dp"/>
+
+                            <Button
+                                android:id="@+id/second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Second"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/corners"
+                                android:padding="10dp"/>
+
+                            <Button
+                                android:id="@+id/third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Third"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/corners"
+                                android:padding="10dp"/>
+
+                            <Button
+                                android:id="@+id/fourth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fourth"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/corners"
+                                android:padding="10dp"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </ScrollView>
+                <Button
+                    android:id="@+id/addrecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Add Record"
+                    android:background="@drawable/corners"
+                    android:textColor="@color/white"
+                    />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/updatelist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

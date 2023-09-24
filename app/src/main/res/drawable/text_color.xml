@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color when the TextInputLayout is focused or has text entered -->
+    <item android:color="@color/bg" android:state_focused="true" />
+    <item android:color="@color/bg" android:state_enabled="true" android:state_activated="true" />
+    <!-- Default color when the TextInputLayout is not focused or has no text entered -->
+    <item android:color="#A9A9A9" />
+</selector>

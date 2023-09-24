@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.AddRecordOffense2">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/prof_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#004471"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#004471"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                    >
+
+                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/cornerwht"
+                android:paddingTop="20dp"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PENALTIES AND PROHIBITED ACTS"
+                            android:textSize="20sp"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="i. Minor Offense"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Minor1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtMinor1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1st Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Reprimand with counseling with parent"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Minor2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtMinor2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2nd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Suspension of 1-2 days with counseling with parent"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Minor3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtMinor3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3rd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– shall be treated as a less grave offense, thus 3 days suspension"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ii. Less Grave Offense"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/LessGrave1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtLessGrave1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1st Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Suspension which shall not exceed three (3) days"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/LessGrave2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtLessGrave2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2nd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" – Suspension for 4-6 days"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/LessGrave3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtLessGrave3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3rd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– shall be treated as a grave offense, thus 7 days"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="iii. Grave Offense"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Grave1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtGrave1stOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1st Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Suspension for seven (7) days"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Grave2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtGrave2ndOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2nd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Suspension for more than seven (7) days but not more than one (1) year – refer to the SDS for approval"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Grave3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtGrave3rdOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3rd Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Suspension for one (1) year or more – refer it to the Secretary for approval"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:paddingBottom="20dp">
+
+                            <CheckBox
+                                android:id="@+id/Grave4thOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#858585" />
+
+                            <TextView
+                                android:id="@+id/txtGrave4thOffense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4th Offense "
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="– Expulsion – refer to the Secretary for approval"
+                                android:textSize="14sp"
+                                android:paddingBottom="10dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <Button
+                    android:id="@+id/addrecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Add Record"
+                    android:background="@drawable/corners"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivities.OverAllhandled">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/student_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#004471"
+                    app:navigationIcon="@drawable/ic_baseline_menu_24"
+                    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                    >
+
+                </androidx.appcompat.widget.Toolbar>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerbl">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OverAll Record"
+                        android:gravity="center"
+                        android:layout_margin="20dp"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Quarter List"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <Button
+                            android:id="@+id/first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/corners"
+                            android:padding="10dp"/>
+
+                        <Button
+                            android:id="@+id/second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Second"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/corners"
+                            android:padding="10dp"/>
+
+                        <Button
+                            android:id="@+id/third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Third"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/corners"
+                            android:padding="10dp"/>
+
+                        <Button
+                            android:id="@+id/fourth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fourth"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/corners"
+                            android:padding="10dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </ScrollView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners"
+                android:layout_margin="20dp"
+                android:padding="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject : "
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"/>
+
+                        <Spinner
+                            android:id="@+id/my_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:entries="@array/subject" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginRight="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Excellent : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/ExcellentID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Very Good : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/VeryGoodID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Highly Satisfactory : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/HighlySatisfactoryID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Good : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/GoodID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Satisfactory : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/SatisfactoryID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Passing : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/PassingID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Retake : "
+                                            android:textStyle="bold"/>
+
+                                        <TextView
+                                            android:id="@+id/RetakeID"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textStyle="bold"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <WebView
+                                    android:id="@+id/chartWebView"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </ScrollView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

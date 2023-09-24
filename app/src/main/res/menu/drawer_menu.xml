@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Dashboard"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:title="Log History"
+            android:id="@+id/notif"
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            />
+        <item
+            android:title="Guidance and Council"
+            android:id="@+id/comp"
+            android:icon="@drawable/ic_baseline_assignment_24"
+            />
+        <item
+            android:title="Account Registration"
+            android:id="@+id/regis"
+            android:icon="@drawable/_055030"
+            />
+        <item
+            android:title="Account Information"
+            android:id="@+id/info"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            />
+
+
+
+        <item android:title="Acount">
+            <menu>
+                <item
+                    android:title="Sign Out"
+                    android:id="@+id/logout"
+
+                    />
+            </menu>
+        </item>
+    </group>
+</menu>
